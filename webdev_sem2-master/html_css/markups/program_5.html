@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frameset</title>
+</head>
+<body>
+    <h1>This is a frame</h1>
+    <frameset cols="30%,50%,20%" frameborder="1">  
+        <frame src="index.html" >  
+        <frame src="https://www.google.com">   
+        <frame src="https://www.instagram.com">  
+        <noframes>
+            Your browser doesn't support frames
+        </noframes>
+    </frameset>
+
+
+    <frameset rows="30%,50%,20%">  
+        <frame src="index.html" >  
+        <frame src="https://www.google.com">   
+        <frame src="https://www.instagram.com">  
+    </frameset>
+
+    <frameset>
+        <frame cols="50%, 50%" src="./student_form.html" name="left">
+        <frame cols="50%, 50%" src="./student_form.html" name="right">
+    </frameset>
+</body>
+</html>

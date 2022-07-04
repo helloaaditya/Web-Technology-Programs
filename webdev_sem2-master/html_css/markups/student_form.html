@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms for admission</title>
+    <link rel="stylesheet" href="../styles/student_form.css">
+</head>
+<body>
+    <section>
+        <h2>Student Info</h2>
+        <form action="" id="form">
+            <fieldset>
+                <input type="text" placeholder="Username*" id="username" minlength="5" required>
+                <input type="password" placeholder="Password*" id="password" required>
+            </fieldset>
+            
+            <fieldset>
+                <p>Choose your gender:</p>
+                <input type="radio" name="gender" checked="checked"> Male
+                <input type="radio" name="gender"> Female
+            </fieldset>
+
+            <fieldset>
+                <p>Which is/are your favorite color?</p>
+                <input type="checkbox" name="red" id="red"> Red
+                <input type="checkbox" name="black" id="black" checked="checked"> Black
+                <input type="checkbox" name="black" id="blue"> Blue
+            </fieldset>
+
+            <fieldset>
+                <label for="textarea">Write about yourself:</label>
+                <textarea id="textarea" cols="10" rows="5" maxlength="120" placeholder="Max: 120 characters"></textarea>
+                <label for="file">Upload your file: </label>
+                <input type="file" name="file" id="file">
+            </fieldset>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>      
+    </section>
+
+</body>
+</html>

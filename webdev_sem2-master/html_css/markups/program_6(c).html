@@ -1,0 +1,100 @@
+<!--Program 6(c). CSS Color, Creating page Layout and Site Designs. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+background-color: #1AF506;
+}
+
+/* Style the header */
+.header {
+  background-color: #F738D1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #A8626A;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #F2EA08;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #1AF506;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+border: 4px double;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+
+  clear: both;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link1</a>
+  <a href="#">Link2</a>
+  <a href="#">Link3</a>
+</div>
+
+<div class="row">
+  <div class="column" style="color:blue; background-color: powderblue;">
+    <h2>Column1 box-sizing property</h2>
+    <p>The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.</p>
+  </div>
+  
+  <div class="column" style="background-color: yellow;color:black">
+    <h2>Column2 overflow property</h2>
+    <p>The CSS overflow property controls what happens to content that is too big to fit into an area.</p>
+  </div>
+  
+  <div class="column" style="background-color: pink;color:black">
+    <h2>Column3 float property</h2>
+    <p>The CSS float property specifies how an element should float. The CSS clear property specifies what elements can float beside the cleared element and on which 	side.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js to demonstrate builtin function</title>
+</head>
+<body>
+    <h2>Js to demonstrate builtin functions</h2>
+    <script>
+        document.writeln(isFinite(643511), "<br>");
+        document.writeln(isFinite(null), "<br>");
+
+        document.writeln(isFinite('0'), "<br>");
+        document.writeln(isFinite(NaN), "<br>");
+        document.writeln(isFinite(Infinity), "<br>");
+        document.writeln(isFinite(undefined), "<br>");
+
+        var number = NaN;
+        var result = isNaN(number);
+        document.write("Is NaN a number?", result);
+    </script>
+</body>
+</html>
