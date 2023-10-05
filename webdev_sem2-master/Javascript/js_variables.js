@@ -47,3 +47,16 @@ const f = 30;
     console.log(f);
 }
 console.log(f);
+const g = 30;
+{
+    let g = 20;
+    console.log(g);
+}
+console.log(g);
+
+const h = 30;
+{
+    let g = 20;
+    console.log(g);
+}
+console.log(h);
