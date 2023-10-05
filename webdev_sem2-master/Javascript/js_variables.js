@@ -54,3 +54,9 @@ const g = 30;
 }
 console.log(g);
 
+const h = 30;
+{
+    let g = 20;
+    console.log(g);
+}
+console.log(h);
